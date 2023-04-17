@@ -1,0 +1,12 @@
+[package]
+name = "sleep"
+version = "0.1.0"
+authors = ["bjoernQ <bjoern.quentin@mobile-j.de>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+hal = { package = "esp32c3-hal", version = "0.8.0" }
+pac = { package = "esp32c3", version = "0.13.0" }
+esp-backtrace = { version = "0.6.0", features = ["esp32c3", "panic-handler", "exception-handler", "print-uart"] }
+esp-println       = { version = "0.4.0", features = ["esp32c3"] }
